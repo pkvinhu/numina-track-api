@@ -28,5 +28,6 @@ This is a take home assignment from [Numina](https://numina.co/why/) that querie
 curl http://localhost:3000/volumes-by-hour/pedestrian
 curl http://localhost:3000/track-points/e71e1c7e573346368b2c2989e8eee61a
 ```
+For additional API testing, I'd recommend using [Postman](https://www.postman.com/downloads/).
 
 
