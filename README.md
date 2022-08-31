@@ -17,11 +17,11 @@ This is a take home assignment from [Numina](https://numina.co/why/) that querie
 
 ## API Endpoints
 
-| Endpoint | Description &nbsp; &nbsp; &nbsp; | Method | Response |
+| Endpoint | Method | Response | Description |
 | ----------- | ----------- | --------- | -------- |
-| /csvData | returns all sample data from `data.csv` in a list of json objects | GET | {trackid,date,time,class,box,bottom_center,geo_bottom_center}[] |
-| /volumes-by-hour/:type  | return a cumulative sum (volume) of unique `trackids` over 1-hour intervals for a requested `class` (pedestrian, bicycle, etc) | GET | { [hour]: trackids[] } |
-| /track-points/:trackid   | return track points for a given `trackid` | GET | { box, bottom_center, geo_bottom_center }[] |
+| /csvData | GET | {trackid,date,time,class,box,bottom_center,geo_bottom_center}[] | returns all sample data from `data.csv` in a list of json objects |
+| /volumes-by-hour/:type  | GET | { [hour]: trackids[] } | return a cumulative sum (volume) of unique `trackids` over 1-hour intervals for a requested `class` (pedestrian, bicycle, etc) |
+| /track-points/:trackid | GET | { box, bottom_center, geo_bottom_center }[] | return track points for a given `trackid` |
 
 ### Sample cURL Requests
 ```
