@@ -8,11 +8,11 @@ This is a take home assignment from [Numina](https://numina.co/why/) that querie
 ### Running Application
 - **Run Locally**: Run `npm start`
 - **Run With Docker**: 
+Make sure [Docker Desktop](https://www.docker.com/) is downloaded
 ```
-1. Make sure [Docker Desktop](https://www.docker.com/) is downloaded
-2. Run docker desktop
-3. Build docker image with `docker build -t numina-track-api .`
-4. Run in docker container with `docker run -it -p ${local_port}:${docker_port} numina-track-api`
+1. Run docker desktop
+2. Build docker image with `docker build -t numina-track-api .`
+3. Run in docker container with `docker run -it -p ${local_port}:${docker_port} numina-track-api`
 ```
 
 ## API Endpoints
