@@ -8,6 +8,7 @@ This is a take home assignment from [Numina](https://numina.co/why/) that querie
 ### Running Application
 - **Run Locally**: Run `npm start`
 - **Run With Docker**: 
+
 Make sure [Docker Desktop](https://www.docker.com/) is downloaded
 ```
 1. Run docker desktop
