@@ -19,7 +19,7 @@ This is a take home assignment from [Numina](https://numina.co/why/) that querie
 
 | Endpoint | Method | Response | Description |
 | ----------- | ----------- | --------- | -------- |
-| /csvData | GET | {trackid,date,time,class,box,bottom_center,geo_bottom_center}[] | returns all sample data from `data.csv` in a list of json objects &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| /csvData | GET | {trackid,date,time,class,box,bottom_center,geo_bottom_center}[] | returns all sample data from `data.csv` in a list of json objects |
 | /volumes-by-hour/:type  | GET | { [hour]: trackids[] } | return a cumulative sum (volume) of unique `trackids` over 1-hour intervals for a requested `class` (pedestrian, bicycle, etc) |
 | /track-points/:trackid | GET | { box, bottom_center, geo_bottom_center }[] | return track points for a given `trackid` |
 
