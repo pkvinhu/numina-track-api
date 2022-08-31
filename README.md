@@ -9,13 +9,15 @@ This is a take home assignment from [Numina](https://numina.co/why/) that querie
 - **Run Locally**: Run `npm start`
 - **Run With Docker**: 
 ```
-1. Build docker image with `docker build -t numina-track-api .`
-2. Run in docker container with `docker run -it -p ${local_port}:${docker_port} numina-track-api`
+1. Make sure [Docker Desktop](https://www.docker.com/) is downloaded
+2. Run docker desktop
+3. Build docker image with `docker build -t numina-track-api .`
+4. Run in docker container with `docker run -it -p ${local_port}:${docker_port} numina-track-api`
 ```
 
 ## API Endpoints
 
-| Endpoint | Description | Method | Response |
+| Endpoint | Description &nbsp; &nbsp; &nbsp; | Method | Response |
 | ----------- | ----------- | --------- | -------- |
 | /csvData | returns all sample data from `data.csv` in a list of json objects | GET | {trackid,date,time,class,box,bottom_center,geo_bottom_center}[] |
 | /volumes-by-hour/:type  | return a cumulative sum (volume) of unique `trackids` over 1-hour intervals for a requested `class` (pedestrian, bicycle, etc) | GET | { [hour]: trackids[] } |
