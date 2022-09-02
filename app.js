@@ -7,7 +7,7 @@ const { sortByHourByType, getPointsByTrackId } = require("./utils/filter");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const handleError = (err, req, res) => {
+const handleError = (err, req, res, next) => {
   res.status(500).send({ error: err.message });
 };
 
