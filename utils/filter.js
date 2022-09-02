@@ -22,7 +22,13 @@ const sortByHourByType = (type) => {
 
   // convert map hour sets to arrays
   return Object.keys(byHourMap).reduce(
-    (map, hour) => ({ ...map, [hour]: Array.from(byHourMap[hour]) }),
+    (map, hour) => ({
+      ...map,
+      [hour]: {
+        count: byHourMap[hour].size,
+        trackids: Array.from(byHourMap[hour]),
+      },
+    }),
     {}
   );
 };
